@@ -131,7 +131,6 @@ main {
 
 /* -------------------- FIRST PARAGRAPH SECTION STYLING -------------------- */
 #info-para {
-    /* border: 1px solid red; */
     font-family: var(--font-family-reg);
     color: #0c0e0c;
     font-weight: bold;
@@ -148,7 +147,6 @@ main {
 
 /* -------------------- FORM INPUT STYLING -------------------- */
 #form-input-area {
-    /* border: 1px solid green; */
     background-color: white;
     color: #0c0e0c;
     box-shadow: 0px 2px 4px 4px #dfdfdf;
@@ -162,7 +160,6 @@ main {
     padding-bottom: 1.3rem;  
 }
 .grid-container {
-    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -171,7 +168,6 @@ main {
     padding-right: 4rem;
 }
 .grid-item {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
 }
@@ -212,7 +208,6 @@ input[type='password']:focus {
 
 /* -------------------- CREATE ACCOUNT SECTION STYLING -------------------- */
 #create-account {
-    /* border: 1px solid purple; */
     font-family: var(--font-family-reg);
     font-size: .8rem;
     font-weight: bold;
