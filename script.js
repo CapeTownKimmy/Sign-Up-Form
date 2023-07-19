@@ -21,5 +21,5 @@ function displayMsg(event) {
 }
 
 function validatePassword() {
-
+    
 }
