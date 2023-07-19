@@ -147,17 +147,47 @@ main {
 }
 
 /* -------------------- FORM INPUT STYLING -------------------- */
-.form-input-area {
+#form-input-area {
     border: 1px solid green;
     background-color: white;
     color: #0c0e0c;
+    box-shadow: 0px 2px 4px 4px #dfdfdf;
+    padding: 1.5rem 2.5rem;
+}
+#form-input-area legend {
+    font-family: var(--font-family-reg);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0c0e0c; 
+    padding-bottom: 1rem;  
+}
+.grid-container {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.8rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+}
+.grid-item {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+.grid-item label {
+    font-family: var(--font-family-reg);
+    font-size: .6rem;
+    font-weight: bold;
+    letter-spacing: .13rem;
+    padding-bottom: .2rem;
 }
 
 /* -------------------- CREATE ACCOUNT SECTION STYLING -------------------- */
 #create-account {
     border: 1px solid purple;
     font-family: var(--font-family-reg);
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: bold;
     color: #0c0e0c;
     padding: 2rem 2.5rem;

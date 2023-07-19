@@ -20,26 +20,40 @@
             <p>You <span>know</span> you want to.</p>
         </section>
 
-        <fieldset class="form-input-area">
-            <legend>Let's do this!</legend>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" required>
+        <section id="form-input-area">
+            <fieldset class="grid-container">
+                <legend>Let's do this!</legend>
+                <div class="grid-item">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" required>
+                </div>
 
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" required>
+                <div class="grid-item">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" required>
+                </div>
 
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" required>
+                <div class="grid-item">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
 
-            <label for="last-name">PHONE NUMBER</label>
-            <input type="text" id="last-name" required>
+                <div class="grid-item">
+                    <label for="last-name">PHONE NUMBER</label>
+                    <input type="text" id="last-name" required>
+                </div>
 
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password">
+                <div class="grid-item">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">    
+                </div>
 
-            <label for="confirm-pass">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-pass" required>
-        </fieldset>
+                <div class="grid-item">
+                    <label for="confirm-pass">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pass" required>
+                </div>
+            </fieldset>
+        </section>
 
         <section id="create-account">
             <button type="submit">Create Account</button>
