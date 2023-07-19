@@ -43,9 +43,10 @@ table {
         border-spacing: 0;
 }
 
-/* -------------------- GLOBAL PAGE LAYOUT -------------------- */
+/* *****************  GLOBAL PAGE LAYOUT *****************  */
 body {
     display: flex;
+    width: 100vw;
 }
 
 
@@ -58,8 +59,13 @@ body {
 /* REGULAR */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
+/* -------------------- GLOBAL VARIABLES -------------------- */
+:root {
+    --font-family-title: 'Norse-Bold';
+    --font-family-reg: 'Open Sans', sans-serif;
+}
 
-/* -------------------- SIDEBAR STYLING -------------------- */
+/* *****************  SIDEBAR STYLING *****************  */
 #sidebar {
     background-image: url(./images/background-img.jpeg);
     background-repeat: no-repeat;
@@ -87,12 +93,12 @@ body {
 }
 h1 {
     color: white;
-    font-family: 'Norse-Bold';
+    font-family: var(--font-family-title);
     font-size: 6rem;
 }
-p {
+#sidebar p {
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family-reg);
     font-weight: 100;  
     font-size: .8rem;
     letter-spacing: .13rem;
@@ -111,4 +117,72 @@ a.adobelink:hover {
 }
 a.adobelink:active {
     color: aquamarine;
+}
+
+
+/* ***************** MAIN STYLING *****************  */
+main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+/* -------------------- FIRST PARAGRAPH SECTION STYLING -------------------- */
+#info-para {
+    border: 1px solid red;
+    font-family: var(--font-family-reg);
+    color: #0c0e0c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 2rem 2.5rem;
+}
+#info-para p:last-child {
+    padding-top: 1rem;
+}
+#info-para p span {
+    font-style: italic;
+}
+
+/* -------------------- FORM INPUT STYLING -------------------- */
+.form-input-area {
+    border: 1px solid green;
+    background-color: white;
+    color: #0c0e0c;
+}
+
+/* -------------------- CREATE ACCOUNT SECTION STYLING -------------------- */
+#create-account {
+    border: 1px solid purple;
+    font-family: var(--font-family-reg);
+    font-size: .9rem;
+    font-weight: bold;
+    color: #0c0e0c;
+    padding: 2rem 2.5rem;
+}
+#create-account button {
+    width: 12rem;
+    height: 2.8rem;
+    font-family: var(--font-family-reg);
+    font-size: .9rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+}
+#create-account p {
+    padding-top: 2rem;
+}
+#create-account p a {
+    color: #596D48;
+    text-decoration: none;
+}
+#create-account p a:hover {
+    text-decoration: underline;
+} 
+#create-account p a:active {
+    color: #0c0e0c;
 }
