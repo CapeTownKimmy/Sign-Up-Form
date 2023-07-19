@@ -80,9 +80,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1.1rem;
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 0;
     right: 0;
     background-color: #0c0e0c99;
@@ -131,7 +131,7 @@ main {
 
 /* -------------------- FIRST PARAGRAPH SECTION STYLING -------------------- */
 #info-para {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: var(--font-family-reg);
     color: #0c0e0c;
     font-weight: bold;
@@ -148,7 +148,7 @@ main {
 
 /* -------------------- FORM INPUT STYLING -------------------- */
 #form-input-area {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     background-color: white;
     color: #0c0e0c;
     box-shadow: 0px 2px 4px 4px #dfdfdf;
@@ -159,14 +159,15 @@ main {
     font-size: 1.2rem;
     font-weight: bold;
     color: #0c0e0c; 
-    padding-bottom: 1rem;  
+    padding-bottom: 1.3rem;  
 }
 .grid-container {
     /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 1.8rem;
+    row-gap: 1.3rem;
+    column-gap: 4rem;
     padding-right: 4rem;
     padding-bottom: 1rem;
 }
@@ -182,10 +183,18 @@ main {
     letter-spacing: .13rem;
     padding-bottom: .2rem;
 }
+.grid-item 
+input[type='text'], 
+input[type='email'],
+input[type='password'] {
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    padding: .3rem;
+}
 
 /* -------------------- CREATE ACCOUNT SECTION STYLING -------------------- */
 #create-account {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     font-family: var(--font-family-reg);
     font-size: .8rem;
     font-weight: bold;
@@ -202,6 +211,7 @@ main {
     background-color: #596D48;
     border: none;
     border-radius: 6px;
+    box-shadow: 2px 4px 4px #dfdfdf;
 }
 #create-account p {
     padding-top: 2rem;
