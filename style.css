@@ -82,7 +82,7 @@ body {
     align-items: center;
     padding: 1.1rem;
     position: absolute;
-    top: 22.5%;
+    top: 28%;
     left: 0;
     right: 0;
     background-color: #0c0e0c99;
@@ -181,6 +181,7 @@ main {
 .grid-item 
 input[type='text'], 
 input[type='email'],
+input[type='tel'],
 input[type='password'] {
     border: 1px solid #dfdfdf;
     border-radius: 4px;
@@ -191,9 +192,17 @@ input[type='password'] {
 .grid-item 
 input[type='text']:focus, 
 input[type='email']:focus,
+input[type='tel']:focus,
 input[type='password']:focus {
     box-shadow: 2px 2px 4px #cecece;
     border: 1px solid blue;
+}
+.grid-item
+input::placeholder {
+    font-family: var(--font-family-reg);
+    font-size: .8rem;
+    color: #a1a1a1;
+    letter-spacing: .1rem;
 }
 .grid-item 
 .error {
@@ -245,4 +254,23 @@ input[type='password']:focus {
 } 
 #create-account p a:active {
     color: #0c0e0c;
+}
+
+
+/* -------------------- CREATE ACCOUNT SECTION STYLING -------------------- */
+.popUp {
+    font-family: var(--font-family-reg);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: white;  
+    /* height: 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem;
+    position: absolute;
+    top: 44.5%;
+    left: 0;
+    right: 0;
+    background-color: #0c0e0c99;
 }
