@@ -82,7 +82,7 @@ body {
     align-items: center;
     padding: 1.1rem;
     position: absolute;
-    top: 28%;
+    top: 28.15%;
     left: 0;
     right: 0;
     background-color: #0c0e0c99;
@@ -163,9 +163,10 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    max-width: 60%;
+    min-width: 200px;
     row-gap: .5rem;
     column-gap: 4rem;
-    padding-right: 4rem;
 }
 .grid-item {
     display: flex;
@@ -263,7 +264,6 @@ input::placeholder {
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: white;  
-    /* height: 10rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,3 +274,26 @@ input::placeholder {
     right: 0;
     background-color: #0c0e0c99;
 }
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media only screen and (max-width: 700px){
+    .title {
+        flex-direction: column;
+        top: 14%;
+    }
+}
+@media only screen and (max-width: 840px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        max-width: 60%;
+        min-width: 200px;
+        row-gap: .5rem;
+        column-gap: 4rem;
+    }
+}
+
+  
+

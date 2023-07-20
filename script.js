@@ -21,12 +21,12 @@ function validatePassword() {
         confirmPass.classList.add('error');
         redoPass();
         newPass.addEventListener('click', clearError);
-    } else {
+    } 
+    else {
         displayMsg();
         clearDisplay();
     }
 }
-
 function displayMsg() {
     const displayMesg = document.createElement('div');
     displayMesg.innerText = `Hi ${firstName.value}! Thank you for registering. We will send your confirmation email to: ${email.value}. Remember to keep your password secret and keep it safe!`;
